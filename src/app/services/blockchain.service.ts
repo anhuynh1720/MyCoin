@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-// @ts-ignore
 import { Blockchain } from 'simple-blockchain-implement';
-import { EC } from 'elliptic';
+import * as EC from 'elliptic';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +30,5 @@ export class BlockchainService {
       publicKey: key.getPublic('hex'),
       privateKey: key.getPrivate('hex'),
     });
-
-
   }
 }
