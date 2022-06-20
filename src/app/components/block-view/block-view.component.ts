@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-block-view',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./block-view.component.css']
 })
 export class BlockViewComponent implements OnInit {
+  @Input() public block;
 
   constructor() { }
 
