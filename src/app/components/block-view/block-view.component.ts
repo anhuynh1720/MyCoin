@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BlockViewComponent implements OnInit {
   @Input() public block;
+  @Input() public selectedBlock;
 
   constructor() { }
 

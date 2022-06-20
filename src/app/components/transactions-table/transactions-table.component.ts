@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-transactions-table',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transactions-table.component.css']
 })
 export class TransactionsTableComponent implements OnInit {
+  @Input() public transactions
 
   constructor() { }
 

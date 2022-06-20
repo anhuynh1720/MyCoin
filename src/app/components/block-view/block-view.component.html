@@ -9,13 +9,14 @@
             <div class="text-truncate" [style.color]="'#' + block.hash.substring(0, 6)">
                 <small>{{ block.hash }}</small>
             </div> 
-        </li>
-        <br>
-        <span class="">Hash of previous block</span>
+            <br>
+            <span class="">Hash of previous block</span>
             <br>
             <div class="text-truncate" [style.color]="'#' + block.previousHash.substring(0, 6)">
                 <small>{{ block.previousHash }}</small>
             </div>
+        </li>
+        <br>
         <li class="list-group-item">
             <span class="">Nonce</span><br>
             <div class="text-truncate text-muted">
