@@ -7,6 +7,7 @@ import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-
 import { BlockViewComponent } from './components/block-view/block-view.component';
 import { TransactionsTableComponent } from './components/transactions-table/transactions-table.component';
 import { CreateTransactionComponent } from './pages/create-transaction/create-transaction.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CreateTransactionComponent } from './pages/create-transaction/create-tr
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
