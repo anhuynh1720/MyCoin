@@ -8,6 +8,8 @@ import { BlockViewComponent } from './components/block-view/block-view.component
 import { TransactionsTableComponent } from './components/transactions-table/transactions-table.component';
 import { CreateTransactionComponent } from './pages/create-transaction/create-transaction.component';
 import { FormsModule } from '@angular/forms';
+import { PendingTransactionsComponent } from './pages/pending-transactions/pending-transactions.component';
+import { WalletBalanceComponent } from './pages/wallet-balance/wallet-balance.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     BlockchainViewerComponent,
     BlockViewComponent,
     TransactionsTableComponent,
-    CreateTransactionComponent
+    CreateTransactionComponent,
+    PendingTransactionsComponent,
+    WalletBalanceComponent
   ],
   imports: [
     BrowserModule,
