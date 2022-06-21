@@ -21,7 +21,7 @@
     "elliptic": "^6.5.4",
     "mycoin": "github:anhuynh1720/Simple-Blockchain-Implement",
     "rxjs": "~7.5.0",
-    "simple-blockchain-implement": "^1.0.3",
+    "simple-blockchain-implement": "^1.0.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
