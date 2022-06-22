@@ -12,7 +12,7 @@ export class BlockchainService {
   public walletKeys = [] as any;
 
   constructor() {
-    this.blockchainInstance.difficulty = 1;
+    this.blockchainInstance.difficulty = 2;
     this.blockchainInstance.minePendingTransactions('my-wallet-address');
     this.generateWalletKeys();
   }

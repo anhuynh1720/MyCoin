@@ -9,10 +9,13 @@ import { BlockchainService } from 'src/app/services/blockchain.service';
 export class BlockchainViewerComponent implements OnInit {
   public blocks = [];
   public selectedBlock = null;
+  public publicKey = null;
+  public balance = null;
 
   constructor(private blockchainService: BlockchainService) {
     this.blocks = blockchainService.getBlock();
     this.selectedBlock = this.blocks[0];
+    this.publicKey = blockchainService.walletKeys[0].publicKey;
    }
 
   ngOnInit(): void {
@@ -20,5 +23,9 @@ export class BlockchainViewerComponent implements OnInit {
 
   showTransactions(block) {
     this.selectedBlock = block;
+  }
+
+  getBalanceOfAddress() {
+    this.balance = this.blockchainService.blockchainInstance.getBalanceOfAddress(this.publicKey);
   }
 }

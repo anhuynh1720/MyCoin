@@ -8,12 +8,12 @@ import { Transaction } from 'simple-blockchain-implement';
   styleUrls: ['./create-transaction.component.css']
 })
 export class CreateTransactionComponent implements OnInit {
-  public newTx;
-  public walletKey;
+  public newTx = null;
+  public walletKey = null;
+  public balance = null;
 
   constructor(private blockChainService: BlockchainService) {
     this.walletKey = this.blockChainService.walletKeys[0];
-
   }
 
   ngOnInit(): void {
@@ -27,4 +27,7 @@ export class CreateTransactionComponent implements OnInit {
     this.newTx = new Transaction();
   }
 
+  getBalanceOfAddress() {
+    this.balance = this.blockChainService.blockchainInstance.getBalanceOfAddress(this.walletKey.publicKey);
+  }
 }
