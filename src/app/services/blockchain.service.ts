@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Blockchain } from 'simple-blockchain-implement';
+import { Blockchain } from 'Simple-blockchain-implement/src/blockchain';
 import * as EC from 'elliptic';
 
 @Injectable({
